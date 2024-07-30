@@ -12,13 +12,13 @@ class VerifyCsrfToken extends Middleware
      * @var array<int, string>
      */
     protected $except = [
-        '/sanctum/csrf-cookie',
+        'sanctum/csrf-cookie',
         'api/sanctum/csrf-cookie',
-        '/register',
-        '/login',
-        '/forgotPassword',
-        '/resetPassword',
-        '/verify-email/{id}/{hash}',
-        '/updateInfo/{id}/{hash}',
+        'register',
+        'login',
+        'forgotPassword',
+        'resetPassword',
+        'verify-email/{id}/{hash}',
+        'updateInfo/{id}/{hash}',
     ];
 }
